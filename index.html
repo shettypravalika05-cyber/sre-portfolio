@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravalika Shetty | SRE & Cloud Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        code, pre, .mono { font-family: 'JetBrains Mono', monospace; }
+        .glass { background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-sky-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass border-b border-slate-800/80 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center font-bold text-white text-lg shadow-lg shadow-sky-500/20">
+                    PS
+                </div>
+                <span class="font-bold text-lg tracking-tight text-white">Pravalika Shetty <span class="text-xs font-normal text-sky-400 border border-sky-500/30 px-2 py-0.5 rounded-full ml-2">SRE / SDE</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#metrics" class="hover:text-sky-400 transition-colors">Impact Metrics</a>
+                <a href="#simulator" class="hover:text-sky-400 transition-colors">SRE Simulator</a>
+                <a href="#calculator" class="hover:text-sky-400 transition-colors font-medium text-emerald-400">Cost Calculator</a>
+                <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="https://linkedin.com" target="_blank" class="p-2 text-slate-400 hover:text-white transition-colors"><i class="fab fa-linkedin text-lg"></i></a>
+                <a href="https://github.com" target="_blank" class="p-2 text-slate-400 hover:text-white transition-colors"><i class="fab fa-github text-lg"></i></a>
+                <a href="#contact" class="px-4 py-2 text-xs font-semibold bg-sky-500 hover:bg-sky-400 text-slate-950 rounded-lg shadow-md shadow-sky-500/20 transition-all">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 px-6 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-[140px] -z-10 pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto text-center space-y-6">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-300 text-xs font-medium">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Distributed Systems & Cloud Reliability Engineer</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                Architecting Low-Latency, High-Throughput <br class="hidden md:inline"/>
+                <span class="gradient-text">Cloud Systems at Global Scale</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
+                Site Reliability & Software Engineer specializing in scalable Kubernetes infrastructure, automated chaos engineering, and high-volume event ingestion across Amazon Web Services.
+            </p>
+            <div class="pt-4 flex flex-wrap justify-center gap-3">
+                <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-800/80 border border-slate-700 text-slate-300">C++ / Go / Java</span>
+                <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-800/80 border border-slate-700 text-slate-300">AWS (EKS, Lambda)</span>
+                <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-800/80 border border-slate-700 text-slate-300">Kubernetes & Terraform</span>
+                <span class="px-3 py-1 rounded-md text-xs font-mono bg-slate-800/80 border border-slate-700 text-slate-300">Object-Oriented Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Grid -->
+    <section id="metrics" class="py-12 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass p-6 rounded-2xl border border-slate-800 hover:border-sky-500/50 transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-mono text-slate-400 uppercase tracking-wider">Managed Scale</span>
+                    <i class="fas fa-server text-sky-400 text-xl group-hover:scale-110 transition-transform"></i>
+                </div>
+                <div class="text-4xl font-extrabold text-white mb-2">1,400+</div>
+                <p class="text-slate-400 text-sm">Active production servers and node pools managed across multi-region Kubernetes clusters with 99.99% availability target.</p>
+            </div>
+            
+            <div class="glass p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-mono text-slate-400 uppercase tracking-wider">MTTR Reduction</span>
+                    <i class="fas fa-bolt text-emerald-400 text-xl group-hover:scale-110 transition-transform"></i>
+                </div>
+                <div class="text-4xl font-extrabold text-emerald-400 mb-2">65%</div>
+                <p class="text-slate-400 text-sm">Reduction in average incident response time by deploying automated Prometheus/Grafana triage pipelines and self-healing alerting workflows.</p>
+            </div>
+
+            <div class="glass p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all group">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-mono text-slate-400 uppercase tracking-wider">Cloud Efficiency</span>
+                    <i class="fas fa-piggy-bank text-indigo-400 text-xl group-hover:scale-110 transition-transform"></i>
+                </div>
+                <div class="text-4xl font-extrabold text-indigo-400 mb-2">35%</div>
+                <p class="text-slate-400 text-sm">Optimized cloud infrastructure spending by automating EKS right-sizing, Spot instance allocation, and garbage collection policies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Chaos & Telemetry Simulator -->
+    <section id="simulator" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="glass p-8 rounded-3xl border border-slate-800 relative overflow-hidden">
+            <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 mb-6 border-b border-slate-800 gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+                        <i class="fas fa-chart-line text-sky-400"></i> Live SRE Chaos & Telemetry Simulator
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-1">Simulate real-time traffic spikes and trigger automated incident mitigation workflows.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button id="btn-chaos" onclick="triggerChaos()" class="px-4 py-2 bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/40 rounded-xl text-xs font-semibold transition-all flex items-center gap-2">
+                        <i class="fas fa-bomb"></i> Inject Traffic Spike
+                    </button>
+                    <button id="btn-mitigate" onclick="triggerMitigation()" class="px-4 py-2 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 rounded-xl text-xs font-semibold transition-all flex items-center gap-2">
+                        <i class="fas fa-shield-halved"></i> Run Auto-Mitigation (-65% Latency)
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div class="lg:col-span-2 h-72">
+                    <canvas id="telemetryChart"></canvas>
+                </div>
+                <div class="space-y-4 bg-slate-900/80 p-5 rounded-2xl border border-slate-800 text-sm font-mono">
+                    <div class="flex justify-between items-center text-xs text-slate-400 pb-2 border-b border-slate-800">
+                        <span>Cluster Status: <strong id="cluster-status" class="text-emerald-400">HEALTHY</strong></span>
+                        <span id="timestamp">Live</span>
+                    </div>
+                    <div class="space-y-2 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">p99 Latency:</span>
+                            <span id="val-latency" class="text-white font-bold">24 ms</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">CPU Load:</span>
+                            <span id="val-cpu" class="text-white font-bold">38%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Active Pods:</span>
+                            <span id="val-pods" class="text-white font-bold">48 / 48</span>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <div class="text-[10px] text-slate-500 uppercase tracking-wider mb-1">System Audit Log</div>
+                        <div id="log-output" class="h-24 overflow-y-auto bg-slate-950 p-2.5 rounded-lg text-[11px] text-slate-300 space-y-1">
+                            <div>[INFO] Monitoring cluster node health across 1,400+ instances...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Cost Calculator -->
+    <section id="calculator" class="py-12 px-6 max-w-7xl mx-auto">
+        <div class="glass p-8 rounded-3xl border border-slate-800">
+            <div class="max-w-3xl">
+                <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <i class="fas fa-calculator text-emerald-400"></i> Interactive Cloud Infrastructure Cost Optimization Calculator
+                </h2>
+                <p class="text-slate-400 text-sm mt-1">Adjust node count and utilization to demonstrate the 35% automated cost optimization impact.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 items-center">
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between text-sm font-medium mb-2">
+                            <span class="text-slate-300">Target Node Count</span>
+                            <span id="lbl-nodes" class="text-sky-400 font-mono font-bold">500 Nodes</span>
+                        </div>
+                        <input type="range" id="input-nodes" min="100" max="1400" value="500" step="50" oninput="calculateSavings()" class="w-full accent-sky-400 cursor-pointer">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-sm font-medium mb-2">
+                            <span class="text-slate-300">Average Compute Utilization</span>
+                            <span id="lbl-util" class="text-indigo-400 font-mono font-bold">45%</span>
+                        </div>
+                        <input type="range" id="input-util" min="20" max="90" value="45" step="5" oninput="calculateSavings()" class="w-full accent-indigo-400 cursor-pointer">
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 text-center space-y-4">
+                    <div class="text-xs font-mono text-slate-400 uppercase tracking-widest">Estimated Monthly Spend</div>
+                    <div class="flex justify-center items-baseline space-x-3">
+                        <span id="spend-before" class="text-2xl font-bold text-slate-500 line-through">$72,000</span>
+                        <span id="spend-after" class="text-4xl font-extrabold text-emerald-400">$46,800</span>
+                    </div>
+                    <div class="inline-block bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs px-3 py-1 rounded-full font-semibold">
+                        Monthly Savings: <span id="spend-savings" class="font-bold">$25,200</span> (35% Cost Optimization)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-16 px-6 max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+            <i class="fas fa-briefcase text-indigo-400"></i> Engineering Experience & Scale
+        </h2>
+
+        <div class="space-y-6">
+            <!-- Experience Item 1 -->
+            <div class="glass p-6 rounded-2xl border border-slate-800">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Senior Site Reliability Engineer</h3>
+                        <span class="text-sky-400 font-medium text-sm">Samsung Electronics</span>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1 rounded-full border border-slate-800">2022 – Present</span>
+                </div>
+                <ul class="text-slate-300 text-sm space-y-2 list-disc list-inside font-light">
+                    <li>Engineered automated health telemetry across 1,400+ production instances, reducing incident MTTR by 65%.</li>
+                    <li>Designed object-oriented Go/Python microservices for high-throughput event logging and monitoring.</li>
+                    <li>Reduced cloud infrastructure expenditure by 35% through EKS auto-scaling and spot node management.</li>
+                </ul>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="glass p-6 rounded-2xl border border-slate-800">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Cloud Systems Engineer</h3>
+                        <span class="text-sky-400 font-medium text-sm">Principal Financial Group</span>
+                    </div>
+                    <span class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1 rounded-full border border-slate-800">2020 – 2022</span>
+                </div>
+                <ul class="text-slate-300 text-sm space-y-2 list-disc list-inside font-light">
+                    <li>Built resilient AWS microservice architecture with C++ and Java modules for backend transaction processing.</li>
+                    <li>Implemented multi-threaded streaming pipelines handling millions of daily records with sub-100ms latency.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="border-t border-slate-800/80 py-12 px-6 text-center text-slate-400 text-sm glass">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <p class="text-white font-medium">Pravalika Shetty — Site Reliability & Cloud Engineer</p>
+            <p class="text-xs text-slate-500">Built with HTML5, Tailwind CSS, and Chart.js — Ready for AWS / Amazon SDE Applications</p>
+        </div>
+    </footer>
+
+    <!-- Scripting -->
+    <script>
+        // Chart setup
+        const ctx = document.getElementById('telemetryChart').getContext('2d');
+        const initialData = [24, 26, 25, 28, 23, 25, 24, 27, 25, 24];
+        const labels = Array.from({length: 10}, (_, i) => `${i*2}s ago`);
+
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'p99 Latency (ms)',
+                    data: initialData,
+                    borderColor: '#38bdf8',
+                    backgroundColor: 'rgba(56, 189, 248, 0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { min: 0, max: 150, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
+                    x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } }
+                },
+                plugins: { legend: { display: false } }
+            }
+        });
+
+        function logEvent(msg) {
+            const out = document.getElementById('log-output');
+            const div = document.createElement('div');
+            div.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            out.appendChild(div);
+            out.scrollTop = out.scrollHeight;
+        }
+
+        function triggerChaos() {
+            chart.data.datasets[0].data = [25, 30, 45, 95, 135, 140, 128, 130];
+            chart.data.datasets[0].borderColor = '#f43f5e';
+            chart.update();
+            
+            document.getElementById('cluster-status').textContent = 'CRITICAL SPIKE';
+            document.getElementById('cluster-status').className = 'text-rose-400 font-bold animate-pulse';
+            document.getElementById('val-latency').textContent = '140 ms';
+            document.getElementById('val-cpu').textContent = '96%';
+            logEvent('ALERT: Traffic surge detected! CPU utilization > 95%. High p99 latency spike.');
+        }
+
+        function triggerMitigation() {
+            chart.data.datasets[0].data = [140, 110, 65, 35, 25, 24, 23, 24];
+            chart.data.datasets[0].borderColor = '#10b981';
+            chart.update();
+
+            document.getElementById('cluster-status').textContent = 'OPTIMIZED (-65% MTTR)';
+            document.getElementById('cluster-status').className = 'text-emerald-400 font-bold';
+            document.getElementById('val-latency').textContent = '24 ms';
+            document.getElementById('val-cpu').textContent = '42%';
+            logEvent('ACTION: Automated Prometheus triage triggered. Auto-scaling pods added. Latency lowered by 65%.');
+        }
+
+        function calculateSavings() {
+            const nodes = parseInt(document.getElementById('input-nodes').value);
+            const util = parseInt(document.getElementById('input-util').value);
+
+            document.getElementById('lbl-nodes').textContent = `${nodes} Nodes`;
+            document.getElementById('lbl-util').textContent = `${util}%`;
+
+            const baseRate = nodes * 144;
+            const optimizedRate = Math.round(baseRate * 0.65);
+            const savings = baseRate - optimizedRate;
+
+            document.getElementById('spend-before').textContent = `$${baseRate.toLocaleString()}`;
+            document.getElementById('spend-after').textContent = `$${optimizedRate.toLocaleString()}`;
+            document.getElementById('spend-savings').textContent = `$${savings.toLocaleString()}`;
+        }
+    </script>
+</body>
+</html>
